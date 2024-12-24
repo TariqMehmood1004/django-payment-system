@@ -50,7 +50,7 @@ def checkout_session(request):
                 line_items=[
                     {
                         'price_data': {
-                            'currency': 'pkr',
+                            'currency': 'usd',
                             'product_data': {
                                 'name': name,
                                 'images': [
