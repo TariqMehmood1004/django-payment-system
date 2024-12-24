@@ -18,6 +18,7 @@ STRIPE_Publishable_key='pk_test_51OotJiGRAnpadYaoYuelpWhvwrZxoxetfFYnoI2fUy3B5cG
 DEBUG = False
 ALLOWED_HOSTS = ['*']
 
+##
 
 # Application definition
 INSTALLED_APPS = [
