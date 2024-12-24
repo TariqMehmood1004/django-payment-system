@@ -15,7 +15,7 @@ HOST = 'http://127.0.0.1:8000'
 STRIPE_SECRET_KEY='sk_test_51OotJiGRAnpadYao1PNTmn60XNIGSJmo7UpOjsrUQBvR7uhf5SKWVtQ4WFxJx1wprgL4IU3CHu6azMX6ifhpNk1R00bx30oDGU'
 STRIPE_Publishable_key='pk_test_51OotJiGRAnpadYaoYuelpWhvwrZxoxetfFYnoI2fUy3B5cG2nxMC8ziwtPkWEldVBom9QVwhBMDQx4GldmP67Bgi0069akU3Fb'
 
-DEBUG = True
+DEBUG = False
 ALLOWED_HOSTS = ['*']
 
 
