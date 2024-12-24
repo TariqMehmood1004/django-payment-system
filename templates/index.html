@@ -8,7 +8,8 @@
 
 {% block content %}
 
-<section class="w-full p-5 md:p-10 h-screen overflow-y-scroll bg-slate-900 flex flex-wrap items-center justify-center gap-5">
+<h1 class="text-4xl text-white font-bold py-4 md:pt-7">Payment System</h1>
+<section class="w-full p-5 md:p-10 flex flex-wrap items-center justify-center gap-5">
     {% if data %}
         {% for d in data %}
             <form method="post" action="{% url 'paymentSystemApp:checkout_session' %}" class="card bg-base-100 image-full w-full md:w-96 shadow-xl">
@@ -21,9 +22,9 @@
                 <div class="card-body">
                     <h2 class="card-title line-clamp-1">{{ d.title }}</h2>
                     <p class="line-clamp-1">{{ d.description }}</p>
-                    <div class="w-full flex flex-row justify-center items-center">
-                      <div class="text-xl">{{ d.price }}</div>
-                      <button type="submit" class="btn btn-primary ml-2 btn-md">Buy Now</button>
+                    <div class="w-full flex justify-between items-center">
+                      <div class="text-2xl font-bold">${{ d.price }}</div>
+                      <button type="submit" class="btn btn-primary border-none rounded-full hover:bg-slate-900 bg-slate-800 ml-2 btn-md">Buy Now</button>
                     </div>
                   </div>
                 <input type="text" value="{{ d.id }}" name="cat_id" hidden>
